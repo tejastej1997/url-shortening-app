@@ -1,0 +1,73 @@
+
+@gray : #bfbfbf;
+@darkviolet : #3b3054;
+@red : #f46262;
+@cyan : #2acfcf;
+@greyishviolet : #9e9aa7;
+@verydarkblue : #35323e;
+@verydarkviolet : #232127;
+
+.getstarted {
+    position: relative;
+
+    // border: 1px solid black;
+    &__inner {
+        max-width: 1488px;
+        padding: 0 24px;
+        margin: auto;
+       
+        border: 1px solid black;
+
+        @media screen and (max-width: 1280px) {
+            
+            
+        }
+    }
+
+    &__image {
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    &__content {
+        padding: 120px 0;
+        max-width: 500px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    &__heading {
+        font-family: poppins;
+        font-size: 60px;
+        font-weight: 700;
+    }
+
+    &__tagline{
+        font-family: poppins;
+        color: @gray;
+        font-size: 20px;
+
+    }
+
+    &__button {
+        font-family: poppins;
+        font-weight: 500;
+        padding: 5px 20px;
+        border-radius: 30px;
+        max-width: fit-content;
+        transition: 0.2s all;
+        cursor: pointer;
+        color: @gray;
+        border: 1px solid @cyan;
+
+
+        &:hover,
+        &:focus {
+            background-color: @cyan ;
+            color: white;
+        }
+    }
+}
