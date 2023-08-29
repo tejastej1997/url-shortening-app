@@ -1,0 +1,70 @@
+@gray : #bfbfbf;
+@darkviolet : #3b3054;
+@red : #f46262;
+@cyan : #2acfcf;
+@greyishviolet : #9e9aa7;
+@verydarkblue : #35323e;
+@verydarkviolet : #232127;
+
+
+.boostlinks {
+    background-image: url('../../assets/images/bg-boost-desktop.svg');
+
+    @media screen and (max-width: 1025px) {
+        background-image: url('../../assets/images/bg-boost-mobile.svg');
+
+    }
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color:@darkviolet ;
+    background-position: center;
+
+
+
+    &__inner {
+        max-width: 1488px;
+        padding: 0 24px;
+        margin: auto;
+        border: 1px solid black;
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    &__heading {
+        color: white;
+        font-family: poppins;
+        font-size: 40px;
+        font-weight: 700;
+    }
+
+    &__button {
+        background: none;
+        padding: 10px 20px;
+        border: none;
+        color: white;
+        font-family: poppins;
+        font-size: 20px;
+        background-color: @cyan;
+        border-radius: 30px;
+        cursor: pointer;
+        transition: 0.2s all;
+
+        &:hover,
+        &:focus {
+            background-color: white;
+            color: @darkviolet;
+        }
+    }
+
+}

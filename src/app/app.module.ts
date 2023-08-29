@@ -7,6 +7,7 @@ import { HomepageComponent } from './homepage/homepage.component';
 import { NavigationcomponentComponent } from './navigationcomponent/navigationcomponent.component';
 import { GetstartedComponent } from './getstarted/getstarted.component';
 import { FooterComponent } from './footer/footer.component';
+import { BoostlinksComponent } from './boostlinks/boostlinks.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { FooterComponent } from './footer/footer.component';
     HomepageComponent,
     NavigationcomponentComponent,
     GetstartedComponent,
-    FooterComponent
+    FooterComponent,
+    BoostlinksComponent
   ],
   imports: [
     BrowserModule,
