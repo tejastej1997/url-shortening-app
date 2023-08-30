@@ -8,6 +8,7 @@ import { NavigationcomponentComponent } from './navigationcomponent/navigationco
 import { GetstartedComponent } from './getstarted/getstarted.component';
 import { FooterComponent } from './footer/footer.component';
 import { BoostlinksComponent } from './boostlinks/boostlinks.component';
+import { StatisticsComponent } from './statistics/statistics.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { BoostlinksComponent } from './boostlinks/boostlinks.component';
     NavigationcomponentComponent,
     GetstartedComponent,
     FooterComponent,
-    BoostlinksComponent
+    BoostlinksComponent,
+    StatisticsComponent
   ],
   imports: [
     BrowserModule,
