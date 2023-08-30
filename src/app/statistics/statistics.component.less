@@ -111,23 +111,71 @@
 
     &__container {
         display: flex;
-        justify-content: space-between;
         align-items: flex-start;
         gap: 70px;
         margin-top: 70px;
+
+        @media screen and (max-width: 1024px) {
+            flex-direction: column;
+
+        }
     }
 
     &__cards {
-        padding: 60px 30px 30px;
-        border-radius: 8px;
-        background-color: white;
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
+
+        &-inner {
+            padding: 60px 30px 30px;
+            border-radius: 8px;
+            background-color: white;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
 
         &:nth-child(2) {
             margin-top: 35px;
+            position: relative;
+
+            &::before,
+            &::after {
+                content: "";
+                width: 70px;
+                height: 6px;
+                background-color: @cyan;
+                position: absolute;
+                top: 40%;
+                transform: translateY(-40%);
+
+                @media screen and (max-width: 1025px) {
+                    top: unset;
+                    width: 6px;
+                    transform: unset;
+                    height: 105px;
+                }
+            }
+
+            &::before {
+                left: -70px;
+
+                @media screen and (max-width: 1025px) {
+                    left: 50%;
+                    transform: translateX(-50%);
+                    top: -105px;
+                }
+
+            }
+
+            &::after {
+                right: -70px;
+
+                @media screen and (max-width: 1025px) {
+                    left: 50%;
+                    transform: translateX(-50%);
+                    bottom: -105px;
+                }
+            }
         }
 
         &:nth-child(3) {
@@ -156,6 +204,11 @@
         height: 70px;
         border-radius: 50%;
         background-color: @darkviolet;
+
+        @media screen and (max-width: 1025px) {
+            left: 50%;
+            transform: translateX(-50%);
+        }
     }
 
     &__logo {
